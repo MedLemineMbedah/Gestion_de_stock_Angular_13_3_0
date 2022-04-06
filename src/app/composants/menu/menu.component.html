@@ -1,0 +1,44 @@
+
+  
+<div class="accordion" id="accordion">
+  <div class="card"  *ngFor="let menu of menuProperties">
+    <div class="card-header" id="menu{{menu.id}}">
+      <h5 class="mb-0">
+        <button class="btn btn-link btn-block  titreStyle"  data-bs-toggle="collapse"  [attr.data-bs-target]="'#collapse' + menu.id" aria-expanded="false" aria-controls="collapseOne">
+          <i class="{{menu.icon}}"></i>&nbsp;
+          {{menu.titre}}
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapse{{menu.id}}"  class="collapse hidden" [attr.aria-labelledby]="'menu' + menu.id" data-parent="#accordion" >
+    
+     <div class="card">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"  *ngFor="let sousMenu of menu.sousMenu"> 
+          <a class="titreStyleFora" href="javascript:void(0);" (click)="navigate(sousMenu.url)">
+            <i class="{{sousMenu.icon}}"></i>&nbsp;
+            {{sousMenu.titre}}
+          </a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </div>
+</div> 
+
+
+
+<!-- 
+
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item"  *ngFor="let menu of menuProperties">
+    <h2 class="accordion-header"  id="menu{{menu.id}}">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" [attr.data-bs-target]="'#id' + menu.id" aria-expanded="false" aria-controls="flush-collapseOne">
+        {{menu.titre}}
+      </button>
+    </h2>
+    <div id="id{{menu.id}}" class="accordion-collapse collapse" [attr.aria-labelledby]="'menu' + menu.id" data-bs-parent="#accordionFlushExample" *ngFor="let sousMenu of menu.sousMenu">
+      <div class="accordion-body"> {{sousMenu.titre}}</div>
+  </div>
+</div> -->
