@@ -65,7 +65,7 @@ export class MenuComponent implements OnInit {
         id:'31',
         titre:'Clients',
         icon:'fa-solid fa-users',
-        url:'',
+        url:'clients',
       },
       {
         id:'32',
@@ -86,7 +86,7 @@ export class MenuComponent implements OnInit {
         id:'41',
         titre:'fournisseurs',
         icon:'fa-solid fa-user-tie',
-        url:'',
+        url:'fournisseurs',
       },
       {
         id:'42',
