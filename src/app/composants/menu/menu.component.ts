@@ -49,7 +49,7 @@ export class MenuComponent implements OnInit {
         id:'22',
         titre:'Mouvement du stock',
         icon:'fa-solid fa-boxes-stacked',
-        url:'',
+        url:'mvtstk',
       }
 
     ]

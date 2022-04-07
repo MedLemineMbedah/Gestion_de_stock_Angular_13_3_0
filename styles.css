@@ -18,6 +18,9 @@ body{
     border: solid #9ca1a6;
     border-radius: 5px;
 }
+.textcenter{
+    text-align: center;
+}
 .blue-color{
     color: #037bfe;
 }
@@ -26,10 +29,24 @@ body{
     margin-left: 26px;
     color: blue;
 }
+.titreStyle{
+    
+    text-decoration :none;
+    text-align: center;
+    color: blue;
+}
 .mrg{
     margin-left: 20px;
     margin-right:20px;
 }
 .text-right{
     text-align: right;
+}
+.text{
+    text-align: right;
+}
+
+.widthStock{
+    width: 1400px;
+    height: auto;
 }
