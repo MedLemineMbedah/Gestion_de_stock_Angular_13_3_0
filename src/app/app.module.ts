@@ -20,6 +20,18 @@ import { DetailMvtStkComponent } from './composants/detail-mvt-stk/detail-mvt-st
 import { DetailCltFrsComponent } from './composants/detail-clt-frs/detail-clt-frs.component';
 import { PageClientComponent } from './pages/client/page-client/page-client.component';
 import { PageFournisseurComponent } from './pages/fournisseur/page-fournisseur/page-fournisseur.component';
+import { NouveauCltFrsComponent } from './composants/nouveau-clt-frs/nouveau-clt-frs.component';
+import { DatailCmdCltFrsComponent } from './composants/datail-cmd-clt-frs/datail-cmd-clt-frs.component';
+import { DatailCmdComponent } from './composants/datail-cmd/datail-cmd.component';
+import { PageCmdCltFrsComponent } from './pages/page-cmd-clt-frs/page-cmd-clt-frs.component';
+import { NouvelleCmdCltFrsComponent } from './composants/nouvelle-cmd-clt-frs/nouvelle-cmd-clt-frs.component';
+import { PageCategorieComponent } from './pages/categorie/page-categorie/page-categorie.component';
+import { NouvelleCategoryComponent } from './pages/categorie/nouvelle-category/nouvelle-category.component';
+import { PageUtilisateurComponent } from './pages/utilisateur/page-utilisateur/page-utilisateur.component';
+import { DetailUtilisateurComponent } from './composants/detail-utilisateur/detail-utilisateur.component';
+import { NouvelUtilisateurComponent } from './pages/utilisateur/nouvel-utilisateur/nouvel-utilisateur.component';
+import { ChangerMotDePasseComponent } from './pages/profil/changer-mot-de-passe/changer-mot-de-passe.component';
+import { PageProfilComponent } from './pages/profil/page-profil/page-profil.component';
 
 @NgModule({
   declarations: [
@@ -40,8 +52,20 @@ import { PageFournisseurComponent } from './pages/fournisseur/page-fournisseur/p
     DetailMvtStkComponent,
     DetailCltFrsComponent,
     PageClientComponent,
-    PageFournisseurComponent
-  ],
+    PageFournisseurComponent,
+    NouveauCltFrsComponent,
+    DatailCmdCltFrsComponent,
+    DatailCmdComponent,
+    PageCmdCltFrsComponent,
+    NouvelleCmdCltFrsComponent,
+    PageCategorieComponent,
+    NouvelleCategoryComponent,
+    PageUtilisateurComponent,
+    DetailUtilisateurComponent,
+    NouvelUtilisateurComponent,
+    ChangerMotDePasseComponent,
+    PageProfilComponent
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule

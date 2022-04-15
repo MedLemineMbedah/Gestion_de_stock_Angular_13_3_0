@@ -1,0 +1,82 @@
+<div class="col mrg mb-3">
+    <div class="col-md-12">
+        <div class="col-md-12 mb-3">
+                <h2>Nouvelle commande {{origin}}</h2>
+        </div>
+        <div class="row p-3 custom-border">
+            <div class="col-md-5 border-right">
+                <form>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" placeholder="Code commande">
+                    </div>
+                    <div class="mb-3">
+                      <input type="text" class="form-control" placeholder="Date commande">
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-select" aria-label="Disabled select example">
+                            <option selected>Selectionner une client</option>
+                            <option >1</option>
+                            <option >2</option>
+                            <option >3</option>
+                        </select>
+                    </div>
+                </form>  
+            </div>
+            <div class="col-md-5 border-right">
+                <div class="col">
+                    <div class="row">
+                        <div class="mr-1"><i class="fa-solid fa-circle-info blue-color"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nom</div>
+                    </div>
+                    <div class="row">
+                        <div class="mr-1"><i class="fa-solid fa-circle-info blue-color"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prenom</div>
+                    </div>
+                    <div class="row">
+                        <div class="mr-1"><i class="fa-solid fa-phone blue-color"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;27666242</div>
+                    </div>
+                    <div class="row">
+                        <div class="mr-1"><i class="fa-solid fa-hourglass-start blue-color"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EN PREPARATION</div>
+                    </div>
+                    
+                </div>  
+            </div>
+            <div class="col-md-2 text-center">
+                <img src="assets/product/OFF_OvertimeLotion_100ml_HERO_2X.jpg" class="rounded-circle" width="200px" height="150px"/>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-2 p-3 custom-border">
+     <form>
+        <div class="row g-3">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Code article">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Quantite">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Prix unitaire">
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-success"><i class="fa-solid fa-plus"></i></button>
+            </div>
+        </div>
+     </form>
+    </div>
+    <div class="row mt-2 p-3 custom-border" style="max-height: 300px; overflow-y: scroll;">
+        <app-datail-cmd></app-datail-cmd>
+        <app-datail-cmd></app-datail-cmd>
+        <app-datail-cmd></app-datail-cmd>
+        <app-datail-cmd></app-datail-cmd>
+        <app-datail-cmd></app-datail-cmd>
+        <app-datail-cmd></app-datail-cmd>
+        <app-datail-cmd></app-datail-cmd>
+        <app-datail-cmd></app-datail-cmd>
+    </div>
+    <div class="row mt-2 p-3 custom-border text-right">
+        <h3>Total de la commande: 135,9</h3>
+    </div>
+    <div class="col-md-12 text-right mt-2">
+        <button class="btn btn-danger"><i class="fa-solid fa-xmark"></i>&nbsp;Annuler</button>&nbsp;
+        <button class="btn btn-primary"><i class="fa-solid fa-floppy-disk"></i>&nbsp;Enregistrer</button>
+    </div>
+</div>

@@ -70,8 +70,8 @@ export class MenuComponent implements OnInit {
       {
         id:'32',
         titre:'Commandes clients',
-        icon:'fa-brands fa-first-order-alt',
-        url:'',
+        icon:'fa-solid fa-truck-front',
+        url:'commandesclient',
       }
     ]
   },
@@ -91,8 +91,8 @@ export class MenuComponent implements OnInit {
       {
         id:'42',
         titre:'Commandes fournisseurs',
-        icon:'fa-brands fa-first-order-alt',
-        url:'',
+        icon:'fa-solid fa-truck-front',
+        url:'commandesfournisseur',
       }
     ]
   },
@@ -107,13 +107,13 @@ export class MenuComponent implements OnInit {
         id:'51',
         titre:'Catagories',
         icon:'fa-solid fa-table',
-        url:'',
+        url:'categories',
       },
       {
         id:'52',
         titre:'Utilisateurs',
         icon:'fa-solid fa-user-group',
-        url:'',
+        url:'utilisateurs',
       }
     ]
   }

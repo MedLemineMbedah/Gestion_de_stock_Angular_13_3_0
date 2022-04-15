@@ -27,7 +27,7 @@ body{
 .titreStyleFora{
     text-decoration :none;
     margin-left: 26px;
-    color: blue;
+    color: black;
 }
 .titreStyle{
     
@@ -49,4 +49,19 @@ body{
 .widthStock{
     width: 1400px;
     height: auto;
+}
+.textleft{
+    text-align: left;
+    text-decoration: none;
+}
+.panel-title :hover {
+    text-decoration: none;
+}
+.cardPosition{
+    margin-top: 30px;
+    margin-left: 340px;    
+}
+.profilePosition{
+    margin-top: 10px;
+    margin-left: 500px;
 }
