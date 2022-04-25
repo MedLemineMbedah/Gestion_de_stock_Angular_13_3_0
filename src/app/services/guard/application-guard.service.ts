@@ -16,5 +16,6 @@ export class ApplicationGuardService implements CanActivate{
   ): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
 
     return false;
+
   }
 }

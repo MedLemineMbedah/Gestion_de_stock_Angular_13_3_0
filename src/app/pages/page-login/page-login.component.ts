@@ -11,6 +11,7 @@ import { AuthenticationRequest } from 'src/gs-api/src/models/authentication-requ
 export class PageLoginComponent implements OnInit {
 
   authenticationRequest: AuthenticationRequest = {};
+  errorMessage='';
 
     constructor(
       private userService: UserService,
@@ -21,7 +22,12 @@ export class PageLoginComponent implements OnInit {
     }
 
     login(){
-      this.userService.login(this.authenticationRequest);
+      this.userService.login(this.authenticationRequest).subscribe((data)=>{
+        localStorage.setItem('authenticationResponse',JSON.stringify(data));
+      },error =>{
+          this.errorMessage="login ou mot de passe incorrect"; 
+
+      });
     }
     
 }
